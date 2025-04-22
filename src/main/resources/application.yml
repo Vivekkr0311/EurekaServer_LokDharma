@@ -1,0 +1,15 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: "eurekaserver"
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
